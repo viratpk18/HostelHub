@@ -1,0 +1,82 @@
+/* Background Styling */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+}
+
+/* Modern Card-Style Form */
+.register-form {
+  background-color: rgba(243, 234, 234, 0.87);
+  padding: 2.5rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+/* Heading */
+.register-form h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* Input Fields */
+.register-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1rem;
+  border: 1px solid #d7d0d0;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #e1e5e9;
+  transition: all 0.3s ease;
+}
+
+.register-form input:focus {
+  border-color: #007bff;
+  background: rgb(242, 229, 229);
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+/* Button Styling */
+.register-form button {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: rgb(245, 238, 238);
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.register-form button:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 91, 187, 0.3);
+}
+
+/* Links */
+.login-link {
+  margin-top: 1rem;
+  font-size: 15px;
+  color: #333;
+}
+
+.login-link a {
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

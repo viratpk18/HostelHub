@@ -1,0 +1,133 @@
+/* Background styling */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #07627ea7, #0f43ec);
+    padding: 20px; /* Prevents the form from touching edges on smaller screens */
+}
+
+/* Glassmorphism form styling */
+.login-form {
+    background: rgba(205, 114, 163, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Heading */
+.login-form h2 {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Flex column styling for role selection */
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Align child elements */
+    width: 100%;
+}
+
+/* Select box and input fields */
+.login-form select,
+.login-form input {
+    width: 100%; /* Ensures uniform width */
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.3);
+    color: rgb(5, 5, 5);
+    outline: none;
+    display: block;
+    text-align: left;
+    box-sizing: border-box; /* Prevents padding from affecting width */
+}
+
+/* Placeholder color */
+.login-form input::placeholder {
+    color: #050505;
+}
+
+/* Adjusted focus effect */
+.login-form input:focus, 
+.login-form select:focus {
+    background: rgba(255, 255, 255, 0.4); /* Subtle change on focus */
+    box-shadow: none; /* Removed unwanted brightness effect */
+    border: 1px solid #ffd700; /* Optional: Add subtle border for focus */
+    outline: none; /* Prevents the default browser outline */
+}
+
+/* Placeholder color during focus */
+.login-form input:focus::placeholder, 
+.login-form select:focus::placeholder {
+    color: #362e2e; /* Keep placeholder color consistent during focus */
+}
+
+/* Button styling */
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    background: #ff6600;
+    color: rgb(23, 21, 21);
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-form button:hover {
+    background: #cc5200;
+}
+
+/* Links */
+.register-link,
+.forgot-password {
+    font-size: 14px;
+    color: white;
+    margin-top: 0.5rem;
+}
+
+.register-link a,
+.forgot-password a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover,
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Icon styling for select box */
+.inputForm {
+    position: relative;
+    width: 100%;
+}
+
+.inputForm #role {
+    width: 100%;
+    padding-left: 2.5rem; /* Offset for icon alignment */
+}
+
+.inputForm #role-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: rgb(222, 138, 138);
+    pointer-events: none;
+}
