@@ -1,0 +1,142 @@
+/* HEADER STYLING */
+.warden-headerK {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* HEADER TITLE */
+.warden-headerK h1 {
+  margin: 0;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+}
+
+/* HOME BUTTON */
+.qwer {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #0056b3;
+  padding: 10px 15px;
+  width: 10%;
+  align-items: center;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  margin-right: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.qwer:hover {
+  background-color: rgb(223, 146, 146);
+  transform: scale(1.05);
+}
+
+/* EACH LEAVE REQUEST */
+.warden-leaves li {
+  background: #f8f9ff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border-left: 5px solid #007bff;
+  font-size: 16px;
+  line-height: 1.5;
+  transition: transform 0.3s ease, background 0.3s ease;
+  display: flex;
+  flex-direction: column; /* Stack elements */
+}
+
+/* HOVER EFFECT FOR LEAVE REQUESTS */
+.warden-leaves li:hover {
+  background: #e0f0ff;
+  transform: translateX(5px);
+  border-left: 5px solid #0056b3;
+}
+
+/* STUDENT NAME & LEAVE REASON */
+.leave-details {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* BUTTON CONTAINER */
+.leave-actions {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 10px;
+  width: 100%;
+  align-items: center; /* Center buttons */
+}
+
+/* REJECT BUTTON (keeps it in the first line) */
+.a321 {
+  background: #dc3545;
+  color: white;
+  width: 150px; /* Adjust button width */
+  padding: 8px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.a321:hover {
+  background: #c82333;
+  transform: scale(1.05);
+}
+
+/* APPROVE BUTTON (moved to the next line) */
+.a123 {
+  background: #28a745;
+  color: white;
+  width: 150px;
+  padding: 8px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px; /* Adds spacing to move it below */
+}
+
+.a123:hover {
+  background: #218838;
+  transform: scale(1.05);
+}
+
+
+/* RESPONSIVENESS */
+@media (max-width: 768px) {
+  .warden-headerK {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .warden-headerK button {
+    margin-top: 10px;
+  }
+
+  .warden-leaves {
+    padding: 15px;
+  }
+
+  .warden-leaves li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .leave-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

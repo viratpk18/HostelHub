@@ -1,0 +1,129 @@
+/* Complaints Page Container */
+.complaints-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: #f8f9ff;
+  }
+  
+  /* Header Section */
+  .complaints-header21 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #59595a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* HostelHub Title */
+  .logo2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ebebeb;
+  }
+  
+  /* Home Button */
+  .home-button1 {
+    background: #6a5acd;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    width: 10%;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-right: 38px;
+  }
+  
+  .home-button1:hover {
+    background: #5740c1;
+  }
+  
+  /* Complaint Form */
+  .complaint-form {
+    margin-top: 12%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .complaint-form input,
+  .complaint-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .complaint-form button {
+    background: #6a5acd;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border: none;
+    width: 20%;
+    display: block; 
+    margin: 0 auto;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .complaint-form button:hover {
+    background: #847f7f;
+    color: #ffffff;
+  }
+  
+  /* Complaints List */
+  .complaint-list {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Complaint Card */
+  .complaint-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover Effect */
+  .complaint-card:hover {
+    transform: translateY(-5px);
+    background: #a7a2a2;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Status Styling */
+  .resolved {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .pending {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .approved {
+    color: blue;
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,84 @@
+/* Announcements Page Container */
+.announcements-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: #f8f9ff;
+  }
+  
+  /* Header Section */
+  .announcements-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #8e9595;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* HostelHub Title */
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6a5acd;
+  }
+  
+  /* Home Button */
+  .home-button010 {
+    background: #6a5acd;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    margin-right: 38px;
+    width: 9%;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .home-button010:hover {
+    background: #b8b0dc;
+    color: rgb(0, 0, 0);
+  }
+  
+  /* Announcements List */
+  .announcements-list {
+    background: white;
+    margin-top: 12%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Announcement Card */
+  .announcement-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover Effect */
+  .announcement-card:hover {
+    transform: translateY(-5px);
+    background: #6a5acd;
+    color: white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* No Announcements Message */
+  .no-announcements {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    padding: 20px;
+  }
+  

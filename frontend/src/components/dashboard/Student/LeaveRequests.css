@@ -1,0 +1,130 @@
+/* Leave Requests Page Container */
+.leave-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: #f8f9ff;
+  }
+  
+  /* Header Section */
+  .leave-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #636363;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* HostelHub Title */
+  .logo69 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  /* Home Button */
+  .home-button69 {
+    background: #ffffff;
+    color: rgb(6, 6, 6);
+    padding: 8px 15px;
+    border: none;
+    width: 10%;
+    margin-right: 38px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .home-button69:hover {
+    background: #372e2e;
+    color: #ffffff;
+  }
+  
+  /* Leave Request Form */
+  .leave-form {
+    background: white;
+    margin-top: 12%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .leave-form input,
+  .leave-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .leave-form button {
+    background: #6a5acd;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 20%;
+    display: block; 
+    margin: 0 auto;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .leave-form button:hover {
+    background: #a3a0ad;
+    color: #000000;
+  }
+  
+  /* Leave Requests List */
+  .leave-list {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Leave Request Card */
+  .leave-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover Effect */
+  .leave-card:hover {
+    transform: translateY(-5px);
+    background: #9690c2;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 5px 15px rgb(179, 111, 111);
+  }
+  
+  /* Status Styling */
+  .approved {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .pending {
+    color: rgb(246, 146, 14);
+    font-weight: bold;
+  }
+  
+  .rejected {
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+  }
+  

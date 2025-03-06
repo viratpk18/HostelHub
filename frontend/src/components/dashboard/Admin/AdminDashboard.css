@@ -1,0 +1,126 @@
+
+/* AdminDashboard.css */
+.admin-container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #007bff;
+  padding: 20px;
+  color: white;
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+.sidebar li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+/* Dashboard */
+.dashboard {
+  flex: 1;
+  background-color: #f8f9fa;
+  padding: 30px;
+}
+
+.dashboard h1 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Admin Info */
+.admin-info {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.admin-info h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+/* Dashboard Cards */
+.dashboard-cards {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Individual Cards */
+.card {
+  background: white;
+  flex: 1;
+  min-width: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Hover Effect */
+.card:hover {
+  background-color: #007bff;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Dragging Effect (Popup) */
+.card:active {
+  transform: scale(1.15);
+  background-color: #0056b3;
+  color: white;
+}
+
+/* Tooltip Effect */
+.card::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  display: none;
+}
+
+/* Show tooltip on hover */
+.card:hover::after {
+  display: block;
+}
+

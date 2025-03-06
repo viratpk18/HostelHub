@@ -1,0 +1,84 @@
+.warden-rooms {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Header Section */
+.warden-header58 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0056b3;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.warden-header58 h1 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.warden-header58 button {
+  background: #007bff;
+  color: white;
+  border: none;
+  width: 10%;
+  padding: 6px 12px; /* Reduced padding */
+  font-size: 14px; /* Smaller font */
+  font-weight: bold;
+  border-radius: 6px; /* Slightly rounded corners */
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.warden-header58 button:hover {
+  background: #30a6ea;
+}
+
+h2 {
+  color: #00796b;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.room-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 15px auto;
+  width: 90%;
+  max-width: 500px;
+  border-left: 5px solid #00796b;
+  transition: 0.3s;
+}
+
+.room-card:hover {
+  transform: scale(1.02);
+}
+
+.room-card p {
+  margin: 10px 0;
+}
+
+button {
+  background: #00796b;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+}
+
+button:hover {
+  background: #004d40;
+}

@@ -1,0 +1,191 @@
+/* HEADER */
+.warden-headeAr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* HEADER TITLE */
+.warden-headeAr h1 {
+  margin: 0;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+}
+
+/* HOME BUTTON */
+.okda {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #d1d5d8;
+  color: #007bff;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.okda:hover {
+  background-color: #0056b3;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* MAIN CONTAINER */
+.warden-announcements {
+  max-width: 850px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ANNOUNCEMENT TITLE */
+.warden-announcements h2 {
+  color: #0056b3;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.warden-announcements h2::before {
+  content: "📢";
+  font-size: 28px;
+}
+
+/* NEW ANNOUNCEMENT BOX */
+.new-announcement-box {
+  background: #f1f9ff;
+  padding: 13px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #007bff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* TITLE INSIDE BOX */
+.new-announcement-box h3 {
+  color: #0056b3;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* ICON NEXT TO TITLE */
+.new-announcement-box h3::before {
+  content: "📝";
+  font-size: 20px;
+}
+
+/* TEXTAREA (INPUT) */
+.warden-announcements textarea {
+  width: 97%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  min-height: 60px;
+}
+
+/* TEXTAREA FOCUS EFFECT */
+.warden-announcements textarea:focus {
+  border-color: #0056b3;
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 91, 187, 0.5);
+}
+
+/* POST ANNOUNCEMENT BUTTON */
+.okna {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.okna:hover {
+  background: #0056b3;
+  transform: scale(1.03);
+}
+
+/* ANNOUNCEMENT LIST */
+.warden-announcements ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.warden-announcements li {
+  background: #f8f9ff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border-left: 5px solid #007bff;
+  font-size: 16px;
+  line-height: 1.5;
+  transition: transform 0.3s ease, background 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* HOVER EFFECT FOR ANNOUNCEMENTS */
+.warden-announcements li:hover {
+  background: #e0f0ff;
+  transform: translateX(5px);
+  border-left: 5px solid #0056b3;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+  .warden-announcements {
+    padding: 15px;
+  }
+
+  .warden-headeAr {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .okda {
+    margin-top: 10px;
+  }
+
+  .warden-announcements h2 {
+    font-size: 22px;
+  }
+
+  .warden-announcements li {
+    font-size: 14px;
+  }
+}
