@@ -77,11 +77,16 @@ npm start
 
 ---
 
-## 📸 Screenshots  
+## 📸 Screenshots
 
-| Student Dashboard | Admin Dashboard |
-|-------------------|----------------|
-| ![Student Dashboard](https://via.placeholder.com/500x300) | ![Admin Dashboard](https://via.placeholder.com/500x300) |
+### 🔹 Admin Dashboard
+![Homepage](screenshots/admin_dashboard.png)
+
+### 🔹 Student Dashboard
+![Student Dashboard](screenshots/student_dashboard.png)
+
+### 🔹 Warden Dashboard
+![Admin Dashboard](screenshots/warden_dashboard.png)
 
 ---
 
