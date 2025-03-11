@@ -1,6 +1,6 @@
 ---
 
-# 🏠 HostelHub - Hostel Management System  
+## 🏠 HostelHub - Hostel Management System  
 
 **HostelHub** is a **MERN Stack** hostel management system that provides an efficient way for students, wardens, and admins to manage hostel activities like complaints, leave requests, and payments.  
 
